@@ -1,0 +1,75 @@
+#main {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    border: 1px solid black;
+}
+
+#main h1 {
+    position: absolute;
+    font-size: 50px;
+    right: 75px;
+    bottom: 35px;
+    z-index: -1;
+
+}
+
+#main:hover #red {
+    transform: rotate(90deg) translateY(100px);
+}
+
+#main:hover #yellow {
+    transform: rotate(-90deg) translateY(100px);
+}
+
+#main:hover #blue {
+    transform: rotate(-90deg) translateY(-100px);
+}
+
+#main:hover #green {
+    transform: rotate(90deg) translateY(-100px);
+}
+
+
+#red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+
+#yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#blue {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+
+#green {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    right: 0;
+    bottom: 0px;
+    transition-property: all;
+    transition-duration: 1s;
+}
