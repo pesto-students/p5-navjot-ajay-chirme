@@ -1,0 +1,187 @@
+#main {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "fort crysta range"
+    "mercedes cruiser pajero"
+    "form form form"
+    "footer footer footer";
+  /* grid-template-columns: 10px 10px 10px 10px;
+    grid-template-rows: 10px 10px 10px 10px 10px; */
+}
+
+#navbar {
+  text-align: center;
+  width: 100%;
+  grid-area: navbar;
+  background-color: lightblue;
+}
+#fort {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 500px;
+  grid-area: fort;
+  background-color: lightgreen;
+}
+
+form{
+    margin-left: 30px;
+}
+
+#form {
+    border: solid blue 4px;
+    padding-left: 70px;
+     margin-left: 75px;
+     width: 267%;
+    grid-area: form;
+    background-color: #A8A4CE;
+    border-radius: 10%;
+    box-shadow: 5px 10px;
+}
+
+#txtform{
+    justify-content: center;
+}
+
+#txtform input{
+   background-color: antiquewhite;
+   margin: 7px;
+}
+
+#crysta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  grid-area: crysta;
+  background-color: lightcoral;
+}
+#range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  grid-area: range;
+  background-color: lightgray;
+}
+#mercedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  grid-area: mercedes;
+  background-color: lightpink;
+}
+#cruiser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  grid-area: cruiser;
+  background-color: lightsalmon;
+}
+#pajero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  grid-area: pajero;
+  background-color: lightgoldenrodyellow;
+}
+#footer {
+  background-color: lightyellow;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#fortimg {
+  height: 200px;
+  width: 200px;
+}
+#crystaimg {
+  height: 200px;
+  width: 200px;
+}
+#rangeimg {
+  height: 200px;
+  width: 200px;
+}
+#merceimg {
+  height: 200px;
+  width: 200px;
+}
+#cruiserimg {
+  height: 200px;
+  width: 200px;
+}
+#pazeroimg {
+  height: 200px;
+  width: 200px;
+}
+
+/* @media (max-width:500px){
+    #navbar h1{
+        display: block;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+#navbar h1{
+    float: none;
+    width: 100%;
+}
+  #main {
+      /* background-color: black; */
+    /* display: grid; */
+    grid-template-areas:
+      'navbar navbar navbar'
+      'fort fort fort'
+      'crysta crysta crysta'
+      'range range range'
+      'mercedes mercedes mercedes'
+      'cruiser cruiser cruiser'
+      'pajero pajero pajero'
+      'footer footer footer';
+      grid-template-rows: 200px 500px 500px 500px 500px 500px 500px 200px;
+  }
+}
+
+/* @media only screen and (max-width: 900px){
+    #main{
+        background-color: aquamarine;
+    }
+}
+  #navbar {
+    width: 100%;
+    grid-area: navbar;
+  }
+  #fort {
+    width: 100%;
+    grid-area: fort;
+    width: 100%;
+  }
+  #crysta {
+    width: 100%;
+    grid-area: crysta;
+    width: 100%;
+  }
+  #range {
+    grid-area: range;
+    width: 100%;
+  }
+  #mercedes {
+    grid-area: mercedes;
+    width: 100%;
+  }
+  #cruiser {
+    grid-area: cruiser;
+    width: 100%;
+  }
+  #pajero {
+    grid-area: pajero;
+    width: 100%;
+  }
+ */
