@@ -91,7 +91,8 @@ form{
   background-color: lightgoldenrodyellow;
 }
 #footer {
-  background-color: lightyellow;
+  background-color: lightcyan;
+  border: dotted green 3px;
   grid-area: footer;
   display: flex;
   flex-direction: column;
