@@ -16,15 +16,6 @@
   grid-area: navbar;
   background-color: lightblue;
 }
-#fort {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  width: 500px;
-  grid-area: fort;
-  background-color: lightgreen;
-}
 
 form{
     margin-left: 30px;
@@ -32,17 +23,19 @@ form{
 
 #form {
     border: solid blue 4px;
-    padding-left: 70px;
-     margin-left: 75px;
-     width: 267%;
+    display: flex;
+    flex-direction: column;
     grid-area: form;
     background-color: #A8A4CE;
     border-radius: 10%;
     box-shadow: 5px 10px;
+    justify-content: center;
+    width: 100%;
 }
 
 #txtform{
-    justify-content: center;
+  text-align: center;
+  font-size: medium; 
 }
 
 #txtform input{
@@ -50,11 +43,21 @@ form{
    margin: 7px;
 }
 
+#fort {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 500px; */
+  grid-area: fort;
+  background-color: lightgreen;
+}
+
 #crysta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   grid-area: crysta;
   background-color: lightcoral;
 }
@@ -62,7 +65,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   grid-area: range;
   background-color: lightgray;
 }
@@ -70,7 +73,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   grid-area: mercedes;
   background-color: lightpink;
 }
@@ -78,7 +81,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   grid-area: cruiser;
   background-color: lightsalmon;
 }
@@ -86,7 +89,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  /* width: 500px; */
   grid-area: pajero;
   background-color: lightgoldenrodyellow;
 }
@@ -123,66 +126,131 @@ form{
   width: 200px;
 }
 
-/* @media (max-width:500px){
-    #navbar h1{
-        display: block;
-    }
-} */
-
-@media only screen and (max-width: 600px) {
-#navbar h1{
-    float: none;
-    width: 100%;
-}
+@media only screen and (max-width: 700px) {
   #main {
-      /* background-color: black; */
-    /* display: grid; */
-    grid-template-areas:
-      'navbar navbar navbar'
-      'fort fort fort'
-      'crysta crysta crysta'
-      'range range range'
-      'mercedes mercedes mercedes'
-      'cruiser cruiser cruiser'
-      'pajero pajero pajero'
-      'footer footer footer';
-      grid-template-rows: 200px 500px 500px 500px 500px 500px 500px 200px;
+      grid-template-areas:
+          'navbar navbar'
+          'fort crysta'
+          'range mercedes'
+          'cruiser pajero'
+          'form form'
+          'footer footer';
+      grid-template-rows: 200px 580px 580px 580px 580px 200px;
   }
-}
 
-/* @media only screen and (max-width: 900px){
-    #main{
-        background-color: aquamarine;
-    }
-}
-  #navbar {
+  #navbar{
     width: 100%;
     grid-area: navbar;
   }
-  #fort {
-    width: 100%;
+
+  #fort{
     grid-area: fort;
-    width: 100%;
+    width: 100%
   }
-  #crysta {
+
+  #crysta{
     width: 100%;
     grid-area: crysta;
-    width: 100%;
   }
-  #range {
+
+  #range{
+    width: 100%;
     grid-area: range;
-    width: 100%;
   }
-  #mercedes {
+
+  #mercedes{
+    width: 100%;
     grid-area: mercedes;
-    width: 100%;
   }
-  #cruiser {
+
+  #cruiser{
+    width: 100%;
     grid-area: cruiser;
-    width: 100%;
   }
-  #pajero {
+
+  #pajero{
+    width: 100%;
     grid-area: pajero;
-    width: 100%;
   }
- */
+
+  #form{
+    width: 100%;
+    grid-area: form;
+  }
+
+  #footer{
+    width: 100%;
+    grid-area: footer;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 550px) {
+  #main {
+      grid-template-areas:
+          'navbar navbar'
+          'fort fort'
+          'crysta crysta'
+          'range range'
+          'mercedes  mercedes'
+          'cruiser cruiser'
+          'pajero  pajero'
+          'form form'
+          'footer footer';
+      grid-template-rows: 200px 580px 580px 580px 580px 200px;
+  }
+
+  #navbar{
+    width: 100%;
+    grid-area: navbar;
+  }
+
+  #fort{
+    grid-area: fort;
+    width: 100%
+  }
+
+  #crysta{
+    width: 100%;
+    grid-area: crysta;
+  }
+
+  #range{
+    width: 100%;
+    grid-area: range;
+  }
+
+  #mercedes{
+    width: 100%;
+    grid-area: mercedes;
+  }
+
+  #cruiser{
+    width: 100%;
+    grid-area: cruiser;
+  }
+
+  #pajero{
+    width: 100%;
+    grid-area: pajero;
+  }
+
+  #form{
+    width: 100%;
+    grid-area: form;
+  }
+
+  #footer{
+    width: 100%;
+    grid-area: footer;
+  }
+
+}
+
+      /* "navbar navbar navbar"
+      "fort crysta range"
+      "mercedes cruiser pajero"
+      "form form form"
+      "footer footer footer"; */
